@@ -95,6 +95,7 @@ TestResult.xml
 dlldata.c
 
 # Benchmark Results
+
 BenchmarkDotNet.Artifacts/
 
 # .NET Core
@@ -396,3 +397,4 @@ Temporary Items
 # Local
 .env
 dist
+yarn.lock
