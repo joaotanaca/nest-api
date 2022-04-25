@@ -1,4 +1,5 @@
 import { Body, Controller, Get, Param, Post } from '@nestjs/common'
+import { GetPost, GetPosts } from './dto'
 import { PostService } from './post.service'
 
 @Controller('post')
@@ -6,13 +7,13 @@ export class PostController {
   constructor(private readonly postService: PostService) {}
 
   @Get()
-  obterPosts(): string {
+  obterPosts(): GetPosts {
     return this.postService.getPosts()
   }
 
   @Get(':id')
-  obterPost(@Param() { id }): string {
-    return `Post ${id}`
+  obterPost(@Param() { id }): GetPost {
+    return this.postService.getPost(id)
   }
 
   @Post()
