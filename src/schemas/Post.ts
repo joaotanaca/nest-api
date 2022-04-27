@@ -1,5 +1,5 @@
+import { PostModel } from 'database/interface'
 import mongoose from 'mongoose'
-import { PostModel } from '../interface'
 
 const Schema = new mongoose.Schema<PostModel>({
   title: {
