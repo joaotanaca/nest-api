@@ -9,9 +9,9 @@
     "target": "es2017",
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "incremental": true,
     "skipLibCheck": true,
-    "paths": { "controllers": ["./src/controllers/"] }
+    "paths": { "controllers": ["./controllers/"] }
   }
 }

@@ -7,8 +7,8 @@ export class PostController {
   constructor(private readonly postService: PostService) {}
 
   @Get()
-  obterPosts(): GetPosts {
-    return this.postService.getPosts()
+  async obterPosts(): Promise<GetPosts> {
+    return await this.postService.getPosts()
   }
 
   @Get(':id')
